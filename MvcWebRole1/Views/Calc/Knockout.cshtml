@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Knockout";
+}
+
+<h2>Knockout</h2>
+<div data-bind="event:{keypress: checkkey}">
+    <h1>Calculator</h1>
+
+    <input type="text" data-bind="value: userinput, valueUpdate: 'afterkeydown'"
+        />
+    <div data-bind="foreach: operations">
+        <input type="button" class="operation" data-bind="title: name, click: fn,value: key" />
+    </div>
+    <div class="result" data-bind="text: result"></div>
+    <div class=" age " data-bind="text:loaded "></div>
+</div>
+
+<a class="jsfiddle" href="http://jsfiddle.net/Maslow/hsHt2/">Knockout</a>
+@section scripts
+{
+    @Scripts.Render(Links.Scripts.knockout_2_2_0_js)    
+    @Scripts.Render(Links.Scripts.Calc.calc_knockout_js)
+}

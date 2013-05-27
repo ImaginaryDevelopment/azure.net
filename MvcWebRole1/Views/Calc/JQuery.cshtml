@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "JQuery";
+}
+@section head{
+    @Styles.Render(Links.Content.Calc_css)
+}
+<h2>JQuery</h2>
+<div class="content">
+    <input type="text" class="userinput" value="10" />
+    <input type="text" class="userinput" value="9" />
+    <input type="button" id="newoperand" value="new" title="Add Operand" />
+    <div id="container"></div>
+    <span class="result"></span>
+    
+    <a class="jsfiddle" href="http://jsfiddle.net/Maslow/X9cts/">Fiddle</a>
+</div>
+@section scripts
+{
+    @Scripts.Render(Links.Scripts.Calc.calc_jquery_js)
+}

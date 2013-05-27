@@ -1,0 +1,23 @@
+﻿@model IEnumerable<MvcWebRole1.Models.LinkModel>
+@{
+    ViewBag.Title = "Index";
+    var child = ViewBag.IsChildAction;
+}
+
+<div id="calculators">
+    @if (child)
+    {
+        <h2>@Html.ActionLink("Calculators", MVC.Calc.Index())</h2>
+    }
+    else
+    {
+    <h3>@Html.ActionLink("Calculators", MVC.Calc.Index())</h3>    
+    }
+    
+    <ul>
+        @foreach (var lm in Model)
+        {
+            <li>@Html.ActionLink(lm.Text,lm.Link)</li>
+        }
+    </ul>
+</div>

@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Angular with jquery keybindings";
+}
+<div data-ng-app="">
+<h2>@ViewBag.Title</h2>
+
+<div>
+    <input data-ng-model="yourName" placeholder="Enter a name here"/>
+    <h1>Hello {{yourName}}!</h1>
+</div>
+<div ng-controller="CalculatorCtrl" on-keyup-fn="handleKeypress">
+    <input type="number" data-ng-model="userinput"/>
+    <span data-ng-repeat="op in operations">
+        <input type="button" class="operation" value="{{op.op}}" title="{{op.text}}" data-ng-click="op.click()"/>
+    </span>
+    <div class="result">{{total}}</div>
+    <div class="age">{{loaded}}</div>
+</div>
+</div>
+<a class="jsfiddle" href="http://jsfiddle.net/Maslow/gnzJQ/">Angular</a>
+@section scripts
+{
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.4/angular.min.js"></script>
+    @Scripts.Render(Links.Scripts.Calc.calc_angular2_js)
+
+}

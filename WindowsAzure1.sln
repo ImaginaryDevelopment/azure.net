@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "WindowsAzure1", "WindowsAzure1\WindowsAzure1.ccproj", "{162609A1-5A13-4BC5-A508-FF636F360FAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcWebRole1", "MvcWebRole1\MvcWebRole1.csproj", "{76CAC62C-58B7-41C8-8195-D005810E7FB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcWebRole1.Tests", "MvcWebRole1.Tests\MvcWebRole1.Tests.csproj", "{7375A533-9643-4EF2-9F9A-841D5B433EDF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{162609A1-5A13-4BC5-A508-FF636F360FAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{162609A1-5A13-4BC5-A508-FF636F360FAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{162609A1-5A13-4BC5-A508-FF636F360FAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{162609A1-5A13-4BC5-A508-FF636F360FAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76CAC62C-58B7-41C8-8195-D005810E7FB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76CAC62C-58B7-41C8-8195-D005810E7FB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76CAC62C-58B7-41C8-8195-D005810E7FB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76CAC62C-58B7-41C8-8195-D005810E7FB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7375A533-9643-4EF2-9F9A-841D5B433EDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7375A533-9643-4EF2-9F9A-841D5B433EDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7375A533-9643-4EF2-9F9A-841D5B433EDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7375A533-9643-4EF2-9F9A-841D5B433EDF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,26 @@
+﻿.result {
+    color:red;
+}
+input {
+    min-width:1em;
+}
+input[type=button]:hover {
+    background-color:yellow;
+}
+.age {
+    font-size: .7em;
+    padding-top:4em;
+}
+.content {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+}
+.age {
+    padding-top: 2em;
+    text-align: center;
+    font-size: .7em;
+}
+.operation{
+    min-width: 1.5em;
+}

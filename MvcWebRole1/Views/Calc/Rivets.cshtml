@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "Rivets Calculator";
+}
+@section head{
+    @Styles.Render(Links.Content.Calc_css)
+}
+<div id="rivetroot" data-on-keypress="calc:checkkey">
+<div id="auction">
+    <h1 data-text="auction.title"></h1>
+
+    <div class='info' data-show='auction.endingSoon'>
+        <p>Hurry up! This auction is ending soon.</p>
+    </div>
+
+    <dl>
+        <dt>Current Bid</dt>
+        <dd data-text='auction.currentBid | money'></dd>
+        <dt>Time left</dt>
+        <dt data-text='auction.remaining | time'></dt>
+    </dl>
+</div>
+    <div id="calc">
+    
+        <h2>Knockout</h2>
+        <div>
+            <h1>@ViewBag.Title</h1>
+
+            <input type="number" data-value="calc.userinput" data-on-keypress="calc.update"/>
+            <span data-each-op="calc.operations">
+                <input type="button" class="operation" data-title="op:text" data-on-click="op:click" data-value="op:op" />
+            </span>
+            <div class="result" data-text="calc.result"></div>
+           
+           <div data-text="calc.userinput"></div>
+        </div>
+    </div>
+     <div class="age" data-text=":loaded | debug">loaded?</div>
+</div>
+@section scripts
+{
+    <!-- http://jsfiddle.net/HCrb2/3/ -->
+    @Scripts.Render(Links.Scripts.watch_min_js)
+    @Scripts.Render(Links.Scripts.rivets_js)
+    @Scripts.Render(Links.Scripts.Calc.calc_rivets_js)
+}

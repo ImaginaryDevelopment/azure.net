@@ -1,0 +1,10 @@
+bin/
+obj/
+*.suo
+*.user
+packages/
+WindowsAzure1/ServiceConfiguration.Cloud.cscfg
+WindowsAzure1/csx/Debug/ServiceDefinition.rd
+x64/
+x86/
+WindowsAzure1/csx/Debug/roles/MvcWebRole1/RoleModel.xml

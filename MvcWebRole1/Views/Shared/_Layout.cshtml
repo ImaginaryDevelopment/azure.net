@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render(Links.Content.themes.gestured.default_css)
+    @RenderSection("head", required: false)
+    
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            @Html.Partial(MVC.Shared.Views._Menu)
+        </div>
+        <div id="page">
+            <div id="sidebar1" class="sidebar">
+                @Html.Partial(MVC.Shared.Views._SideBar1)
+            </div>
+            <div id="content">
+                <div class="post">
+                    @RenderBody()
+                </div>
+
+            </div>
+            <div id="sidebar2" class="sidebar">
+                @Html.Partial(MVC.Shared.Views._SideBar2)
+            </div>
+            <!-- end sidebars -->
+            <div style="clear: both;">&nbsp;</div>
+        </div>
+    </div>
+    @if (ViewBag.RenderJQuery!=false)
+    {
+    @Scripts.Render("~/bundles/jquery")    
+    }
+    @RenderSection("scripts", required: false)
+</body>
+</html>
